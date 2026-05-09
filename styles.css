@@ -28,6 +28,13 @@ header {
     border-radius: 8px;
     margin-bottom: 40px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Add Flexbox: */
+    display: flex;
+    flex-direction: column;
+    /* Stacks the h1 and p on top of each other */
+    align-items: center;
+    /* Centers them horizontally */
+    justify-content: center;
 }
 
 header h1 {
@@ -73,6 +80,14 @@ p {
 /* Interests List Styling */
 #interests ul {
     list-style-type: none;
+    /* Add Flexbox: */
+    display: flex;
+    flex-direction: row;
+    /* Places items side-by-side */
+    flex-wrap: wrap;
+    /* If they run out of room, they will wrap to the next line */
+    gap: 15px;
+    /* Adds space between the items */
 }
 
 #interests li {
